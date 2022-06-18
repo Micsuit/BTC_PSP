@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-PSP_MODULE_INFO("BTCPSP", 0, 1, 1);
+PSP_MODULE_INFO("BTCPSP", 0, 1, 0);
 
 #define printf pspDebugScreenPrintf
 
