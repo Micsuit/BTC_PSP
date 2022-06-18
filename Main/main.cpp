@@ -62,91 +62,91 @@ int main(void)
 	while(!done){
 		pspDebugScreenSetXY(0, 2);
 
-    	sceCtrlReadBufferPositive(&pad, 1); 
+		sceCtrlReadBufferPositive(&pad, 1); 
 
-        // A bit messy but whatever
+		// A bit messy but whatever
 
-	printf("Analog X = %d ", pad.Lx);
-	printf("Analog Y = %d \n\n", pad.Ly);
-        printf("Cross Counter: %d\n", CROSS_COUNTER);
-        printf("Square Counter: %d\n", SQUARE_COUNTER);
-        printf("Circle Counter: %d\n", CIRCLE_COUNTER);
-        printf("Triangle Counter: %d\n\n", TRIANGLE_COUNTER);
-        printf("Down Counter: %d\n", DOWN_COUNTER);
-        printf("Right Counter: %d\n", RIGHT_COUNTER);
-        printf("Left Counter: %d\n", LEFT_COUNTER);
-        printf("Up Counter: %d\n\n", UP_COUNTER);
-        printf("Start Counter: %d\n", START_COUNTER);
-        printf("Select Counter: %d\n", SELECT_COUNTER);
-        printf("L-Trigger Counter: %d\n", L_TRIGGER_COUNTER);
-        printf("R-Trigger Counter: %d\n\n\n\n\n\n", R_TRIGGER_COUNTER);
-        printf("\n\n\n\n\n\n\n\nMade By MicSuit in 2022");
+		printf("Analog X = %d ", pad.Lx);
+		printf("Analog Y = %d \n\n", pad.Ly);
+		printf("Cross Counter: %d\n", CROSS_COUNTER);
+		printf("Square Counter: %d\n", SQUARE_COUNTER);
+		printf("Circle Counter: %d\n", CIRCLE_COUNTER);
+		printf("Triangle Counter: %d\n\n", TRIANGLE_COUNTER);
+		printf("Down Counter: %d\n", DOWN_COUNTER);
+		printf("Right Counter: %d\n", RIGHT_COUNTER);
+		printf("Left Counter: %d\n", LEFT_COUNTER);
+		printf("Up Counter: %d\n\n", UP_COUNTER);
+		printf("Start Counter: %d\n", START_COUNTER);
+		printf("Select Counter: %d\n", SELECT_COUNTER);
+		printf("L-Trigger Counter: %d\n", L_TRIGGER_COUNTER);
+		printf("R-Trigger Counter: %d\n\n\n\n\n\n", R_TRIGGER_COUNTER);
+		printf("\n\n\n\n\n\n\n\nMade By MicSuit in 2022");
 
 		if (pad.Buttons != 0){
 
-             // A bit messy but whatever (lol)
+             		// A bit messy but whatever (lol)
 			if (pad.Buttons & PSP_CTRL_SQUARE){
 				SQUARE_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_SQUARE)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			}
+				while (pad.Buttons & PSP_CTRL_SQUARE)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					}
 			else if (pad.Buttons & PSP_CTRL_TRIANGLE){
 				TRIANGLE_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_TRIANGLE)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			} 
+				while (pad.Buttons & PSP_CTRL_TRIANGLE)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					} 
 			else if (pad.Buttons & PSP_CTRL_CIRCLE){
 				CIRCLE_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_CIRCLE)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			} 
+				while (pad.Buttons & PSP_CTRL_CIRCLE)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					} 
 			else if (pad.Buttons & PSP_CTRL_CROSS){
 				CROSS_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_CROSS)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			} 
+				while (pad.Buttons & PSP_CTRL_CROSS)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					} 
 
 			else if (pad.Buttons & PSP_CTRL_UP){
 				UP_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_UP)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			} 
+				while (pad.Buttons & PSP_CTRL_UP)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					} 
 			else if (pad.Buttons & PSP_CTRL_DOWN){
 				DOWN_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_DOWN)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			} 
+				while (pad.Buttons & PSP_CTRL_DOWN)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					} 
 			else if (pad.Buttons & PSP_CTRL_LEFT){
 				LEFT_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_LEFT)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			} 
+				while (pad.Buttons & PSP_CTRL_LEFT)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					} 
 			else if (pad.Buttons & PSP_CTRL_RIGHT){
 				RIGHT_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_RIGHT)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			}      
+				while (pad.Buttons & PSP_CTRL_RIGHT)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					}      
 
 			else if (pad.Buttons & PSP_CTRL_START){
 				START_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_START)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			}
+				while (pad.Buttons & PSP_CTRL_START)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					}
 			else if (pad.Buttons & PSP_CTRL_SELECT){
 				SELECT_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_SELECT)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			}
+				while (pad.Buttons & PSP_CTRL_SELECT)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					}
 			else if (pad.Buttons & PSP_CTRL_LTRIGGER){
 				L_TRIGGER_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_LTRIGGER)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			}
+				while (pad.Buttons & PSP_CTRL_LTRIGGER)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					}
 			else if (pad.Buttons & PSP_CTRL_RTRIGGER){
 				R_TRIGGER_COUNTER += 1;
-                while (pad.Buttons & PSP_CTRL_RTRIGGER)
-                    sceCtrlReadBufferPositive(&pad, 1);
-			}      
+				while (pad.Buttons & PSP_CTRL_RTRIGGER)
+				    sceCtrlReadBufferPositive(&pad, 1);
+					}      
 		}
 	}
 
