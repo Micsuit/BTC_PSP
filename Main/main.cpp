@@ -66,8 +66,8 @@ int main(void)
 
         // A bit messy but whatever
 
-		printf("Analog X = %d ", pad.Lx);
-		printf("Analog Y = %d \n\n", pad.Ly);
+	printf("Analog X = %d ", pad.Lx);
+	printf("Analog Y = %d \n\n", pad.Ly);
         printf("Cross Counter: %d\n", CROSS_COUNTER);
         printf("Square Counter: %d\n", SQUARE_COUNTER);
         printf("Circle Counter: %d\n", CIRCLE_COUNTER);
